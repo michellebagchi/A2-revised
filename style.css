@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "new-order", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(224, 169, 82, 0.969);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: white;
+    font-size: 150px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+/* button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 0;
+    background-color: rgb(74, 60, 28);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+} */
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease;
+    animation: float 3s infinite ease;
+}
+
+/* I asked kirthiga; my classmate to guide me with making the cards float: */
+
+.card1{
+    animation: float 3.2s infinite ease;
+    background-image: url(pics/sunnysideup2.png);
+}
+.card2{
+    animation: float 2.9s infinite ease;
+    background-image: url(pics/softboilcat.png);
+}
+.card3{
+    animation: float 3.3s infinite ease;
+    background-image: url(pics/peelegg.png);
+}
+.card4{
+    background-image: url(pics/eggyolk.png);
+}
+
+.card:hover{
+    animation: float 1s infinite ease;
+    /* transform: translateY(-10px); */
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-2vh);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+

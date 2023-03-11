@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: rgba(224, 169, 82, 0.97);
+    font-family: new-order, sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+li{
+    line-height: 1.5rem;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 120px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100dvh;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content img{
+    width: 34vw;
+    margin: -10vw;
+}
+
+.box{
+   width: 30vw;
+   padding: 5vh;
+}
+
+.left{
+    background-color: #fff;
+}
+
+.right{
+    background-color: rgb(74, 60, 28);
+}
+
+.right{
+    color: #fff;
+}
+
+.right h4{
+    color: rgba(224, 169, 82, 0.97);
+    text-align: center;
+}
+
+.about-box{
+    width: 35vw;
+    padding: 18vh;
+    background-color: rgb(74, 60, 28);
+    color: #fff;
+    margin-left: 33%;
+    justify-content: center;
+    
+}
+
+
+
+/* I used media screen and used viewport units to make the site responsive for mobile   */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media only screen and (max-width: 940px) { 
+    .wrapper{
+        display: block;
+    }
+
+    .box{
+        width: 90vw;
+    }
+
+    .left{
+        margin-top: 7vh;
+    }
+
+    .right{
+        margin-bottom: 7vh;
+    }
+
+    .content img{
+        width: 34vw;
+        margin: 1px;
+    }
+}
